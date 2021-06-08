@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-06-08T11:59:41.620Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="fghIzQ8JBEEuUS99g4Sm" version="14.7.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-08T13:14:39.111Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="L9jKVFeJccfiiGFFrGde" version="14.7.6" type="github">
   <diagram id="wz4sPfIFF2yIOVBOe_L-" name="Page-1">
-    <mxGraphModel dx="734" dy="239" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1502" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,19 +14,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-4" value="unsigned int ip = (ip_part1 &amp;lt;&amp;lt; 24) + (ip_part2 &amp;lt;&amp;lt; 16) + (ip_part3 &amp;lt;&amp;lt; 8) + ip_part4;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="80" y="280" width="200" height="60" as="geometry" />
+          <mxGeometry x="320" y="180" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E6fmKeeXtpJE0uDuukFZ-6" target="E6fmKeeXtpJE0uDuukFZ-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-6" value="unsigned int question_size, buffer_size = form_standard_response(buffer, domain_name, ip, &amp;amp;question_size);" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="320" y="280" width="200" height="60" as="geometry" />
+          <mxGeometry x="560" y="180" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E6fmKeeXtpJE0uDuukFZ-8" target="E6fmKeeXtpJE0uDuukFZ-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-8" value="Message *message = new_message(buffer, buffer_size, question_size, UINT_MAX);" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="320" y="170" width="200" height="60" as="geometry" />
+          <mxGeometry x="560" y="80" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E6fmKeeXtpJE0uDuukFZ-10" target="E6fmKeeXtpJE0uDuukFZ-14" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -39,8 +39,13 @@
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-10" value="message_map_insert(message);" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="320" y="80" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="E6fmKeeXtpJE0uDuukFZ-16" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E6fmKeeXtpJE0uDuukFZ-14" target="E6fmKeeXtpJE0uDuukFZ-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="E6fmKeeXtpJE0uDuukFZ-16" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="E6fmKeeXtpJE0uDuukFZ-14" target="E6fmKeeXtpJE0uDuukFZ-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="260" />
+              <mxPoint x="300" y="210" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="E6fmKeeXtpJE0uDuukFZ-14" value="&lt;span&gt;fscanf(config_file,&quot;%u.%u.%u.%u %s\n&quot;, &amp;amp;ip_part1, &amp;amp;ip_part2, &amp;amp;ip_part3, &amp;amp;ip_part4, domain_name) != EOF&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="140" width="200" height="120" as="geometry" />
