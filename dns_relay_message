@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-08T12:29:59.716Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="1Dmq6EDutCD6k_NAfj8M" version="14.7.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-08T13:04:31.842Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="FF65WJBWSMp1aEspF5IV" version="14.7.6" type="github">
   <diagram id="lCv_En2GCyU9ktc-KCV7" name="Page-1">
     <mxGraphModel dx="734" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -168,6 +168,84 @@
         </mxCell>
         <mxCell id="jy7Ab7isIuU9RlvYapXu-45" value="return message_node;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="920" y="80" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-48" target="jy7Ab7isIuU9RlvYapXu-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-48" value="static int handle_dynamic_message_node(&lt;br&gt;Message_node *message_node, int operation);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="740" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-52" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-49" target="jy7Ab7isIuU9RlvYapXu-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="860" />
+              <mxPoint x="300" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-58" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-49" target="jy7Ab7isIuU9RlvYapXu-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-49" value="operation == UPDATE_ID" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="840" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-51" target="jy7Ab7isIuU9RlvYapXu-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-51" value="message_node-&amp;gt;id = ++message_map_dynamic_id;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="740" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-53" value="return MESSAGE_VILID;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="820" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-60" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-57" target="jy7Ab7isIuU9RlvYapXu-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-57" value="operation == CHECK_TTL" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="920" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-59" target="jy7Ab7isIuU9RlvYapXu-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-59" value="time_t time_now = time(NULL);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1000" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-64" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-61" target="jy7Ab7isIuU9RlvYapXu-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="1200" />
+              <mxPoint x="300" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-61" target="jy7Ab7isIuU9RlvYapXu-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="1120" />
+              <mxPoint x="300" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-61" value="message_node-&amp;gt;time_stamp&lt;br&gt;&amp;nbsp;+ get_message_ttl(message_node-&amp;gt;message-&amp;gt;buffer) &amp;gt; time_now" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1080" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-63" target="jy7Ab7isIuU9RlvYapXu-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-63" value="decrease_message_ttl(message_node&lt;br&gt;-&amp;gt;message-&amp;gt;buffer, time_now - message_node-&amp;gt;time_stamp);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1140" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jy7Ab7isIuU9RlvYapXu-65" target="jy7Ab7isIuU9RlvYapXu-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-65" value="message_node-&amp;gt;time_stamp = time_now;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1060" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-67" value="return MESSAGE_VILID;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="980" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy7Ab7isIuU9RlvYapXu-69" value="return MESSAGE_INVILID;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="900" width="200" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
