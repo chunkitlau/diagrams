@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2021-06-08T13:58:55.924Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" version="14.7.6" etag="Y3Szg3u_7EW1DOvc61ZU" type="github"><diagram id="StqsteQg_U9NUrkLROQR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-08T14:06:34.919Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="EGryztrfUW0GmUort0aB" version="14.7.6" type="github">
+  <diagram id="StqsteQg_U9NUrkLROQR" name="Page-1">
+    <mxGraphModel dx="1561" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="reEMbaQHnCG2np-R2NfZ-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="reEMbaQHnCG2np-R2NfZ-1" target="reEMbaQHnCG2np-R2NfZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="reEMbaQHnCG2np-R2NfZ-1" value="unsigned int get_message_ttl(&lt;br&gt;unsigned char *buffer);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="reEMbaQHnCG2np-R2NfZ-2" value="return handle_ttl(buffer,GET_TTL,0);" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="160" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="reEMbaQHnCG2np-R2NfZ-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="reEMbaQHnCG2np-R2NfZ-4" target="reEMbaQHnCG2np-R2NfZ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="reEMbaQHnCG2np-R2NfZ-4" value="void decrease_message_ttl(unsigned char *buffer,unsigned int delta_time);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="240" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="reEMbaQHnCG2np-R2NfZ-7" value="static unsigned int handle_ttl(unsigned char *buffer, int operation, unsigned int delta_time);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="reEMbaQHnCG2np-R2NfZ-8" value="&lt;span&gt;handle_ttl(buffer, DECREASE_TTL, delta_time);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="320" width="220" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
